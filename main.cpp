@@ -8,12 +8,11 @@ int main() {
 
 	std::srand(std::time(nullptr));
 
-	test_heap_sort_time<int>(2000000);
-	test_shell_sort_time<int>(2000000, 3);
+	test_heap_sort_time<int>(4000000);
+	test_shell_sort_time<int>(4000000, 4);
 
-	//			    Heap_sort           Shell_sort
-	// unsorted_vec   	 =  37104ms     	39038ms
-	// unsorted_vec		 =  35640ms 		30380ms
-
+	//			  Heap_sort   Shell_sort
+	// unsorted_vec   	=  48009ms 	59275ms
+	// unsor_5_elements	=  46504ms 	28209ms
 	return 0;
 }
